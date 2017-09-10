@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FinTech Automation Tool</title>
+</head>
+<body>
+<table width="100%" style="margin-top: 18px; border-bottom: 1px solid black; border-bottom-style: groove;">
+    <tr>
+        <td>
+            <font color="#3366ff" face="Calibri Light" size="5"><b>FinTech</b></font>
+            <font color="black" face="Calibri Light" size="5"><b>Trigger Lightsout</b></font>
+        </td>
+        <td align="right">
+            <font color="black" face="Calibri Light" size="3"><b>Number of Runs Triggered: <%= hitsCount%></b></font>
+        </td>
+    </tr>
+</table>
+<form action="/trigger" method="post">
+    <div>
+        <div id="fields">
+            <font color="black" face="Calibri Light" size="3"><b>Please select the Run Name. Use 'Trigger' to start a
+                new
+                Lightsout Job</b></font>
+            <br><br>
+            <font color="black" face="Calibri Light" size="3"><b>Run Name</b><br></font>
+            <select id="runName" name="runName" style="width: 505px; " onChange="changeLabel(this);">
+                <option value="default">-Select-</option>
+                <option value="Mergedown_BATS_Prod">Mergedown BATS - Prod</option>
+                <option value="Mergedown_BATS_Non_Prod">Mergedown BATS - Non Prod</option>
+                <option value="MergeDown_P1">MergeDown P1</option>
+                <option value="MergeDown_RRF">MergeDown RRF</option>
+                <option value="Sprint_BATS">Sprint BATS</option>
+                <option value="Sprint_P1">Sprint P1</option>
+                <option value="Sprint_RRF">Sprint RRF</option>
+                <option value="Rel9.2_BTE_Long_Running">Rel9.2 BTE Long Running (fuscdrmovm15) - FIN run for P4FA
+                </option>
+                <option value="Rel9.2_BTE_Restore_(fuscdrmovm38)">Rel9.2 BTE Restore (fuscdrmovm38) - FIN run for P4FA
+                </option>
+                <option value="Rel11_GA_CDRM_OVM_FSCM_Pillar_Patch_(fuscdrmovm104)">Rel11 GA CDRM OVM FSCM Pillar Patch
+                    (fuscdrmovm104)
+                </option>
+                <option value="Rel13_17.09A_CDRM_OVM_Long_Running">Rel13 17.09A CDRM OVM Long Running - EACQ (FIN Local
+                    for
+                    Re-execution)
+                </option>
+                <option value="Rel13_17.11A_CDRM_DIT_(fuscdrmsmc166)">Rel13 17.11A CDRM DIT (fuscdrmsmc166) (FIN Local
+                    for
+                    Re-execution)
+                </option>
+                <option value="Rel13_FINC_Automation_Sandbox">Rel13 FINC Automation Sandbox</option>
+                <option value="Rel13_FIND_Automation_Sandbox">Rel13 FIND Automation Sandbox</option>
+
+                <option value="Test">Test</option>
+
+            </select>
+            <br><br>
+            <font color="black" face="Calibri Light" size="3"><b>FAAT Label</b><br></font>
+            <input type="text" id="faatLabel" name="faatLabel" style="width: 505px; ">
+            <!-- <select name="faatLabel" id="faatLabel">
+                <option value="default" selected>-Select-</option>
+            </select> -->
+            <br><br>
+            <input type="submit" value="Trigger">
+        </div>
+        <div class="bottomContent" align="center" id="footer" style="border-top:1px solid black; margin-bottom: 20px">
+            <br><font color="black" face="Calibri Light" size="2"><b>A product of FinTech Central Automation
+            Group</b><br></font>
+            <font color="black" face="Calibri Light" size="2"><b>Contact <a href="mailto:sasasriv_org_ww@oracle.com">Sandeep
+                Kant Shrivastava</a> for any assistance</b><br></font>
+        </div>
+    </div>
+</form>
+</body>
+</html>

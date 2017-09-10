@@ -1,0 +1,18 @@
+body {
+    padding-top: 50px;
+}
+
+.top-pad {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.form-group .select {
+    max-width: 200px;
+}
+
+.form-group .select span.text {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

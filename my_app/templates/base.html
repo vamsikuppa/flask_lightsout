@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <title>Lights Out Tool</title>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="url_for{{ 'trigger.home' }}">Light Out Tool</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    {% block container %}
+    {% endblock %}
+</div>
+<div class="bottomContent" align="center" id="footer"
+     style="border-top:1px solid black; margin-bottom: 20px">
+    <br><span style="color: black; font-family: sans-serif; font-size: 12px; "><b>A product of FinTech Central Automation
+            Group</b><br></span>
+    <span style="color: black; font-family: sans-serif; font-size: 12px; "><b>Contact <a
+            href="mailto:sasasriv_org_ww@oracle.com">Sandeep
+                    Kant Shrivastava</a> for any assistance</b><br></span>
+</div>
+</body>
+</html>

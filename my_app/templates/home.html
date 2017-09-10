@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block container %}
+    <form action="/trigger" method="post">
+        <div id="fields">
+            <span style="color: black; font-family: sans-serif; font-size: small; "><b>Please select the Run Name. Use 'Trigger' to start a
+                new
+                Lightsout Job</b><br><br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-2">
+                        <label for="sel1">Run Name (select one):</label>
+                        <select id="runName" name="runName" class="form-control" style="width: 505px">
+                            {% for id, env in envlabels.iteritems() %}
+                                <option value= {{ id }}>{{ env['name'] }}</option>
+                            {% endfor %}
+                        </select><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <label for="faatLabel">FAAT Label</label>
+                        <input type="text" id="faatLabel" name="faatLabel" class="form-control"
+                               placeholder="Enter the FAAT Label" style="width: 505px; ">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <button type="button" class="btn btn-primary">Trigger</button>
+                    </div>
+                </div>
+                <br>
+            </div>
+            </span>
+        </div>
+    </form>
+{% endblock %}

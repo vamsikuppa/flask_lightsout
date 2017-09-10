@@ -1,0 +1,16 @@
+envLabels = {
+    'env1': {'name': 'Rel11_GA_CDRM_OVM_FSCM_Pillar_Patch_(fuscdrmovm104)',
+             'orderprop': '/net/slc10xkv/scratch/atangudu/order_prop/Rel11OVM.prop',
+             'provfile': '/net/slc10xkv/scratch/atangudu/prov_plan/sprint_81.prop'},
+    'env2': {'name': 'Rel13_17.09A_CDRM_OVM_Long_Running',
+             'orderprop': '/net/slc10xkv/scratch/atangudu/order_prop/1709A.prop',
+             'provfile': '/net/slc10xkv/scratch/atangudu/prov_plan/sprint_81.prop'},
+    'env3': {'name': 'Rel13_17.11A_CDRM_DIT_(fuscdrmsmc166)',
+             'orderprop': '/net/slc10xkv/scratch/atangudu/order_prop/1711A.prop',
+             'provfile': '/net/slc10xkv/scratch/atangudu/prov_plan/sprint_81.prop'},
+    'env4': {'name': 'Rel13_FINC_Automation_Sandbox',
+             'orderprop': '/net/slc10xkv/scratch/atangudu/order_prop/FINCSandBox.prop',
+             'provfile': '/net/slc10xkv/scratch/atangudu/prov_plan/sprint_81.prop'},
+    'env5': {'name': 'CDRM_Test', 'orderprop': '/net/slc10xkv/scratch/atangudu/order_prop/cdrm_test.prop',
+             'provfile': '/net/slc10xkv/scratch/atangudu/prov_plan/sprint_81.prop'},
+}
