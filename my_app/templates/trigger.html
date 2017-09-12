@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block container %}
-    <p>
-    {{ commandOutput }}
-    </p>
+    <div class="container">
+        <p>LO Command has successfully run. DTE ID is:
+            <a href="http://preflightmanager.us.oracle.com/apex/f?p=121:14:2973575170171:5541213953682:NO::P14_DTE_ID,P14_RERUN_ID:{{ commandOutput }},1">{{ commandOutput }}</a></p>
+        <a href="{{ url_for('home') }}"><span class="glyphicon glyphicon-log-in"></span> Back to LO Trigger Page</a>
+    </div>
 {% endblock %}

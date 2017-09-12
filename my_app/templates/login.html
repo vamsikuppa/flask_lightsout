@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block container %}
+    {% if session['logged_in'] %}
+        <p>You're logged in already!</p>
+    {% else %}
+        <div class="container"><br>
+            <form action="/welcome" method="post" class="form-signin">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <label for="inputEmail" class="sr-only">Email address</label>
+                <input type="text" placeholder="Username" name="uname" class="form-control" required>
+                <label for="inputPassword" class="sr-only">Password</label>
+                <input type="password" id="password" placeholder="Password" name="psw" class="form-control" required>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Remember me
+                    </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    {% endif %}
+{% endblock %}

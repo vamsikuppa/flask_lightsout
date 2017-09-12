@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block container %}
+    <div class="container">
+        <br>
+        <p>Invalid Credentials. Please try again</p>
+        <a href="{{ url_for('login') }}"><span class="glyphicon glyphicon-log-in"></span> Back to Login</a>
+    </div>
+{% endblock %}
