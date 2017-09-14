@@ -53,3 +53,19 @@ class users(db.Model):
 
     def __init__(self, username):
         self.username = username
+
+class centralenvs(db.Model):
+    id=db.Column(db.Integer,primary_key=True)
+    envLabel = db.Column(db.String(255))
+    envName = db.Column(db.String(255))
+    orderProp = db.Column(db.String(255))
+    provFile = db.Column(db.String(255))
+
+    def __init__(self, envLabel, envName, orderProp, provFile):
+        self.envLabel = envLabel
+        self.envName = envName
+        self.orderProp = orderProp
+        self.provFile = provFile
+
+    def __repr__(self):
+        return '<Environment %d>' % self.id

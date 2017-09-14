@@ -20,8 +20,8 @@
                     <label for="faatLabel">FAAT Label</label>
                     <select required id="runName" name="runName" class="form-control" style="width: 505px">
                         <option value="" selected disabled>Please select</option>
-                        {% for id,faatlabel in faatlabels.iteritems() %}
-                            <option value= {{ faatlabel['id'] }}>{{ faatlabel['faatLabel'] }}</option>
+                        {% for faatlabel in faatlabels | reverse %}
+                            <option value= {{ faatlabel }}>{{ faatlabel }}</option>
                         {% endfor %}
                     </select>
                 </div>
